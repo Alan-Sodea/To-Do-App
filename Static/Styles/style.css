@@ -1,0 +1,148 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid black; */
+}
+
+body
+{
+    background-color: rgb(240, 240, 240);
+}
+
+.page
+{
+    position: absolute;
+    top: 10%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px;
+    height: 80%;
+    width: 360px;
+    left: calc((100% - 360px)/2);
+}
+
+.title
+{
+    margin: 30px;
+    font-size: 25px;
+    font-family: cursive;
+    margin-bottom: 20px;
+    color: tomato;
+    padding-bottom: 10px;
+    border-bottom: 5px solid black;
+}
+
+form
+{
+    width: calc(100% - 20px);
+    border-radius: 20px;
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+form input
+{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    font-weight: 200;
+    padding-left: 10px;
+    width: 100%;
+}
+
+form div
+{
+    border-radius: 50%;
+    background-color: greenyellow;
+    width: 30px;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: 1px solid green;
+    transition: linear 0.4s;
+}
+
+form input:hover
+{
+    border: 1px solid rgb(183, 181, 181);
+}
+
+
+
+
+
+
+.task
+{
+    width: calc(100% - 40px);
+    border-radius: 20px;
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right top, blue, violet);
+    border: 1px solid rgb(220, 95, 255);
+    padding: 5px;
+}
+
+.task .name
+{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    padding-left: 10px;
+    width: 100%;
+    text-align: left;
+    font-family: cursive;
+    color: white;
+}
+
+.task .delete
+{
+    border-radius: 20px;
+    width: 30px;
+    font-size: 20px;
+    outline: 2px solid red;
+    background-color: red;
+    font-family: tahoma;
+    padding-top: 2px;
+    margin-left: 10px;
+    animation: all 0.4s;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+.list
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: auto;
+    height: calc(70% - 20px);
+    outline: 1px solid black;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.task .delete:hover
+{
+    filter: opacity(.7);
+}
+
+::-webkit-scrollbar
+{
+    background: transparent;
+    width: 0;
+}
+
+@media only screen and (max-width : 800px) 
+{
+    
+}
