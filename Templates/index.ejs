@@ -12,24 +12,27 @@
             To Do List
         </div>
 
-        <form action="">
+        <form action="new" method="post">
             <input type="text" name="task" placeholder="Enter a task name">
-            <div>+</div>
+            <input type="submit" value="+  ">
         </form>
 
         <div class="list">
-            <center>
-                <div class="task">
-                    <div class="name">Ranger ma chambre ce soir</div>
-                    <div class="delete">X</div>
-                </div>
-            </center>
-            <center>
-                <div class="task">
-                    <div class="name">Ranger ma chambre ce soir</div>
-                    <div class="delete">X</div>
-                </div>
-            </center>
+
+            <% let i = 0;
+                while (i<tasks.length)
+                { %>
+                    <center>
+                        <div class="task">
+                            <div class="name" id="<%=tasks[i].id%>" ><%=tasks[i].task%></div>
+                            <form action="delete" method="post">
+                                <input type="text" name="id" class="hidden" value="<%=tasks[i].id%>">
+                                <input type="submit" value="X " class="delete">
+                            </form>
+                        </div>
+                    </center>
+                <%  i++;
+                } %>
         </div>
 
     </div>
